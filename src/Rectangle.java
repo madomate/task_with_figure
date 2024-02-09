@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements Shape {
     private final double a;
     private final double b;
 
@@ -7,4 +7,8 @@ public class Rectangle {
         this.b = b;
     }
 
+    @Override
+    public double area() {//вычисление площади
+        return a * b;
+    }
 }
